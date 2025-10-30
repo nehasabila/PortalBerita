@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Tentang Kami - Siantar Codes Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #4b0082;
+  color: #fff;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;          /* ukuran logo */
+  height: 50px;         /* biar sama dan bulat */
+  border-radius: 50%;   /* membuat logo bulat */
+  object-fit: cover;    /* biar gambar tetap proporsional */
+  border: 2px solid #facc15; /* garis luar logo warna kuning */
+  background: #fff;     /* latar putih supaya kontras */
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); /* efek bayangan lembut */
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #facc15;
+}
+
+.btn-login {
+  background: #facc15;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-overlay h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Tentang Kami */
+.tentang {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.tentang h2 {
+  color: #3C2179;
+  margin-bottom: 40px;
+}
+
+.profil {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  justify-content: center;
+}
+
+.profil img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bio {
+  max-width: 600px;
+  text-align: left;
+}
+
+/* === VISI & MISI === */
+    .visi-misi {
+      text-align: center;
+      padding: 40px 80px;
+    }
+
+    .visi-misi h2 {
+      color: #3f2b96;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .visi-misi p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .misi-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .misi-item {
+      width: 180px;
+      text-align: center;
+    }
+
+    .misi-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #3f2b96;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 24px;
+      margin: 0 auto 10px;
+    }
+
+    .misi-item p {
+      font-size: 14px;
+      color: #444;
+    }
+
+/* === FITUR UNGGULAN (Versi Tengah dan 2 Kolom) === */
+.fitur {
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.fitur h2 {
+  color: #3f2b96;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.fitur-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* biar tetap rapi di HP */
+  text-align: left;
+}
+
+.fitur-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.fitur-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.fitur-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.fitur-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #4b0082;
+  color: white;
+  padding: 60px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+footer h3, footer h4 {
+  color: #facc15;
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.socials i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #facc15;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+  </style>
+</head>
+<body>
+
+    
+  <!-- Header / Navbar -->
+ <header>
+    <div class="container nav">
+     <div class="logo">
+  <img src="image/logo.jpg" alt="Logo Siantar Codes Academy">
+  <span>Siantar Codes Academy</span>
+</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Galery/kegiatan</a>
+        <a href="#">Program Kami</a>
+        <a href="#">Berita</a>
+        <a href="#" class="btn-login">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="image/home.jpeg" alt="Banner" />
+    <div class="banner-overlay">
+      <h1>TENTANG KAMI</h1>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section class="tentang">
+    <h2>Tentang Siantar Codes Academy</h2>
+    <div class="profil">
+      <img src="image/user.jpeg" alt="Head of Director">
+      <div class="bio">
+        <h3>Head of Director</h3>
+        <p><strong>Abdi Rahim Damanik, M.Kom</strong></p>
+        <p>
+          Siantar Codes Academy adalah platform pelatihan digital yang bergerak dalam bidang pengembangan web dan teknologi informasi. 
+          Kami berkomitmen membantu peserta menguasai keterampilan digital masa kini.
+        </p>
+        <p>
+          Dengan tenaga pengajar berpengalaman dan kurikulum yang up-to-date, kami menciptakan lingkungan belajar yang interaktif dan aplikatif.
+          Melalui platform ini, ia menghadirkan solusi digital berbasis video interaktif, di mana siapa pun dapat belajar kapan saja, tanpa harus meninggalkan rumah, dan dengan biaya yang sangat terjangkau. Ia percaya bahwa pendidikan adalah kunci perubahan sosial, dan teknologi adalah jembatannya.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi & Misi -->
+  <section class="visi-misi">
+    <div class="visi">
+      <h2>Visi</h2>
+      <p>
+        Menjadi platform pendidikan digital unggulan yang berfokus pada pengembangan keterampilan teknologi 
+        untuk mencetak generasi muda yang berkompeten dan berdaya saing global.
+      </p>
+    </div>
+
+    <div class="misi">
+      <h2>Misi</h2>
+    <div class="misi-icons">
+      <div class="misi-item">
+        <div class="misi-icon">💡</div>
+        <p>Mengembangkan kemampuan berpikir kritis dan kreatif.</p>
+      </div>
+      <div class="misi-item">
+        <div class="misi-icon">💻</div>
+        <p>Melatih keterampilan praktis di bidang pemrograman dan teknologi digital.</p>
+      </div>
+      <div class="misi-item">
+        <div class="misi-icon">🤝</div>
+        <p>Membangun jejaring komunitas belajar berbasis kolaborasi dan inovasi.</p>
+      </div>
+      <div class="misi-item">
+        <div class="misi-icon">🚀</div>
+        <p>Mendorong talenta digital daerah untuk bersaing di tingkat nasional.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fitur Unggulan -->
+   <!-- FITUR UNGGULAN -->
+  <!-- FITUR UNGGULAN -->
+<section class="fitur">
+  <h2>Fitur Unggulan</h2>
+  <div class="fitur-container">
+    <div class="fitur-image">
+      <img src="image/coding.jpg" alt="Fitur Unggulan">
+    </div>
+    <div class="fitur-text">
+      <ul>
+        <li>Program intensif berbasis proyek nyata dengan bimbingan langsung mentor berpengalaman.</li>
+        <li>Kurikulum adaptif sesuai kebutuhan industri teknologi terkini.</li>
+        <li>Pelatihan berbasis online dan offline dengan metode hybrid learning.</li>
+        <li>Sertifikat kompetensi dan portofolio proyek profesional untuk peserta.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <h3>Siantar Codes Academy</h3>
+        <p>Membangun SDM digital Indonesia yang inovatif dan kompeten.</p>
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div>
+        <h4>Link Terkait</h4>
+        <a href="#">Tentang Kami</a><br>
+        <a href="#">Program</a><br>
+        <a href="#">Registrasi</a>
+      </div>
+      <div>
+        <h4>Kontak Kami</h4>
+        <p><i class="fa-solid fa-envelope"></i> info@siantarcodesacademy.id</p>
+        <p><i class="fa-solid fa-phone"></i> +62 812 3456 7890</p>
+      </div>
+    </div>
+    <p class="copy">© 2025 Siantar Codes Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
