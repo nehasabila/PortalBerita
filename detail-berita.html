@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Berita - Siantar Codes Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://animaproject.s3.amazonaws.com/home/favicon.png"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <script id="anima-load-script" src="load.js"></script>
+    <script id="anima-hotspots-script" src="hotspots.js"></script>
+    <script id="anima-overrides-script" src="overrides.js"></script>
+    <script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script>
+  </head>
+
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="#">
+          <img
+            alt="Logo"
+            class="brand-logo"
+            src="https://cdn.animaapp.com/projects/64342f198ad28913b10efee9/releases/690193f92ff3927bbd80b025/img/whatsapp-image-2025-10-28-at-09-26-25-72fa03be-1-1@2x.png"
+            width="40"
+          />
+          <div class="ms-2">
+            <span class="small d-block">Siantar Codes</span>
+            <span class="small">Academy</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link text-warning active" href="profile.html"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeri/Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Program Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning active" href="mainberita.html"
+                >Berita</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="#" class="btn btn-login">LOGIN</a>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- Title -->
+    <section class="text-center py-4 section-title">
+      <h2 class="fw-bold text-white mb-0">BERITA</h2>
+    </section>
+
+    <!-- Konten Berita Dinamis -->
+    <section class="container mt-5 mb-5" id="detail-berita">
+      <p>Memuat berita...</p>
+    </section>
+
+    <!-- Komentar -->
+    <section class="container mb-5">
+      <div class="comment-box p-4 rounded-4">
+        <h6 class="fw-semibold mb-3">
+          Komentar <span class="badge bg-danger" id="commentCount">0</span>
+        </h6>
+        <div class="input-group">
+          <input
+            id="commentInput"
+            type="text"
+            class="form-control"
+            placeholder="Tulis Komentar...."
+          />
+          <button id="sendComment" class="btn btn-warning px-4 fw-semibold">
+            Kirim
+          </button>
+        </div>
+      </div>
+
+      <!-- Daftar Komentar -->
+      <div id="commentList" class="mt-4"></div>
+    </section>
+
+    <!-- START FOOTER  -->
+    <footer class="footer-custom text-white text-center text-lg-start">
+      <div class="container-fluid py-5 px-4">
+        <div class="row gy-4 gx-5 justify-content-center">
+          <!-- Kolom 1 -->
+          <div class="col-lg-5 col-md-6">
+            <div class="align-items-center justify-content-center mx-5 mb-3" ">
+            <img
+              alt="Logo"
+              class="brand-logo"
+              anima-src="https://cdn.animaapp.com/projects/64342f198ad28913b10efee9/releases/690193f92ff3927bbd80b025/img/whatsapp-image-2025-10-28-at-09-26-25-72fa03be-1-1@2x.png"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            />
+          </div>
+          <p class="mt-1 mx-5">
+            Pelatihan Online Berbasis Video & E-Book Dengan Instruktur
+            Profesional
+          </p>
+          <ul class="list-unstyled d-flex flex-row mx-5 mb-0">
+            <li>
+              <a class="text-white px-2" href="#"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="col-lg-1 col-md-6"></div>
+
+        <!-- Kolom 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3">Link Terkait</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Materi Pembelajaran</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Kontak Kami</h5>
+          <ul class="list-unstyled mb-0">
+            <li><p class="mb-1">admin@siantarcodesacademy.com</p></li>
+            <li><p class="mb-1">+62890791717787</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center py-3 footer-bottom">
+        © 2025 Siantar Codes Academy
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
