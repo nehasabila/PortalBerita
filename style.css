@@ -23,6 +23,11 @@ body {
 .nav-link:hover {
   color: #ffb703 !important; /* Kuning saat hover */
 }
+.navbar-nav .nav-link.active {
+  font-weight: 700;
+  color: #ffb703 !important; /* Kuning */
+  border-bottom: 2px solid #ffb703; /* Garis bawah */
+}
 .btn-login {
   background-color: #ffb703;
   color: black;
