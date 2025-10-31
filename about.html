@@ -133,12 +133,47 @@ header {
   width: 400px;
   height: 450px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 100px;
 }
+
+.profile-section {
+    text-align: center; /* Agar foto dan teks rata tengah */
+    margin-top: 20px;    /* Jarak antara section dengan elemen sebelumnya */
+}
+
+.profile-photo {
+    width: 250px;       /* Lebar foto */
+    border-radius: 30px; /* Sudut foto membulat */
+    display: block;     /* Menghilangkan jarak bawah gambar */
+    margin: 0 auto;     /* Mengatur posisi foto agar di tengah */
+}
+
+.text-under-photo {
+    margin-top: 0px;    /* Jarak antara foto dengan teks */
+}
+
+.text-under-photo h3 {
+       margin-top: 0;
+    position: relative;
+    top: -30px;
+    font-weight: bold;
+     text-align: left;
+  margin-left: 390px; /* Adjust as needed */
+}
+
+
+.text-under-photo p {
+   margin-top: 0;
+    position: relative;
+    top: -30px;
+      text-align: left;
+  margin-left: 340px; /* Adjust as needed */
+}
+
 
 .bio {
   max-width: 600px;
-  text-align: left;
+  text-align: justify;
 }
 
 /* === VISI & MISI === */
@@ -150,7 +185,7 @@ header {
     .visi-misi h2 {
       color: #3f2b96;
       font-size: 22px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .visi-misi p {
@@ -322,18 +357,21 @@ footer a:hover {
     <div class="profil">
       <img src="image/user.jpeg" alt="Head of Director">
       <div class="bio">
-        <h3>Head of Director</h3>
-        <p><strong>Abdi Rahim Damanik, M.Kom</strong></p>
-        <p>
-          Siantar Codes Academy adalah platform pelatihan digital yang bergerak dalam bidang pengembangan web dan teknologi informasi. 
-          Kami berkomitmen membantu peserta menguasai keterampilan digital masa kini.
-        </p>
-        <p>
-          Dengan tenaga pengajar berpengalaman dan kurikulum yang up-to-date, kami menciptakan lingkungan belajar yang interaktif dan aplikatif.
-          Melalui platform ini, ia menghadirkan solusi digital berbasis video interaktif, di mana siapa pun dapat belajar kapan saja, tanpa harus meninggalkan rumah, dan dengan biaya yang sangat terjangkau. Ia percaya bahwa pendidikan adalah kunci perubahan sosial, dan teknologi adalah jembatannya.
+         Siantar Codes Academy adalah platform pelatihan digital karya anak daerah yang didirikan oleh Abdi Rahim Damanik, seorang dosen dan praktisi di bidang Pemrograman Web dari STIKOM Tunas Bangsa Pematangsiantar. Platform ini menjadi bentuk nyata kontribusi dosen dalam menjalankan Tri Dharma Perguruan Tinggi, khususnya dalam bidang pengabdian kepada masyarakat dan inovasi teknologi pembelajaran. 
+          Sebagai akademisi yang aktif dalam dunia pendidikan dan pengembangan masyarakat, Abdi melihat langsung tantangan yang dihadapi generasi muda dan masyarakat umum di daerah Siantar dan Simalungun—terutama dalam hal akses pendidikan teknologi, keterampilan kerja, dan peluang berwirausaha.
+          Melalui platform ini, ia menghadirkan solusi digital berbasis video interaktif, di mana siapa pun dapat belajar kapan saja, tanpa harus meninggalkan  rumah, dan dengan biaya yang sangat terjangkau. Ia percaya bahwa pendidikan adalah kunci perubahan sosial, dan teknologi adalah jembatannya.
         </p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <div class="profile-section">
+    <div class="text-under-photo">
+        <h3>Head of Director</h3>
+        <p><strong>Abdi Rahim Damanik, M.Kom</strong></p>
+    </div>
+</div>
   </section>
 
   <!-- Visi & Misi -->
@@ -341,8 +379,8 @@ footer a:hover {
     <div class="visi">
       <h2>Visi</h2>
       <p>
-        Menjadi platform pendidikan digital unggulan yang berfokus pada pengembangan keterampilan teknologi 
-        untuk mencetak generasi muda yang berkompeten dan berdaya saing global.
+        Menjadi platform pelatihan digital unggulan yang berdampak luas bagi  peningkatan kualitas SDM Indonesia, khususnya di daerah Siantar dan  Simalungun, melalui pendidikan berbasis teknologi yang inklusif,  
+        aplikatif, dan berdaya saing global.
       </p>
     </div>
 
@@ -351,25 +389,31 @@ footer a:hover {
     <div class="misi-icons">
       <div class="misi-item">
         <div class="misi-icon">💡</div>
-        <p>Mengembangkan kemampuan berpikir kritis dan kreatif.</p>
+        <p>Menyediakan akses pelatihan berkualitas tinggi secara online dengan biaya 
+          terjangkau untuk seluruh lapisan masyarakat.</p>
       </div>
       <div class="misi-item">
         <div class="misi-icon">💻</div>
-        <p>Melatih keterampilan praktis di bidang pemrograman dan teknologi digital.</p>
+        <p>Mendorong peningkatan keterampilan kerja dan kewirausahaan masyarakat agar 
+          mampu bersaing di era digital.</p>
       </div>
       <div class="misi-item">
         <div class="misi-icon">🤝</div>
-        <p>Membangun jejaring komunitas belajar berbasis kolaborasi dan inovasi.</p>
+        <p>Mendorong peningkatan keterampilan kerja dan kewirausahaan masyarakat agar mampu 
+          bersaing di era digital.</p>
       </div>
       <div class="misi-item">
         <div class="misi-icon">🚀</div>
-        <p>Mendorong talenta digital daerah untuk bersaing di tingkat nasional.</p>
+        <p>Memberikan bimbingan dan pendampingan karier maupun usaha secara gratis bagi peserta didik.</p>
+      </div>
+       <div class="misi-item">
+        <div class="misi-icon">💡</div>
+        <p>Mengembangkan ekosistem belajar yang fleksibel, adaptif, dan terintegrasi dengan kebutuhan industri masa kini.</p>
       </div>
     </div>
   </section>
 
-  <!-- Fitur Unggulan -->
-   <!-- FITUR UNGGULAN -->
+
   <!-- FITUR UNGGULAN -->
 <section class="fitur">
   <h2>Fitur Unggulan</h2>
@@ -379,10 +423,11 @@ footer a:hover {
     </div>
     <div class="fitur-text">
       <ul>
-        <li>Program intensif berbasis proyek nyata dengan bimbingan langsung mentor berpengalaman.</li>
-        <li>Kurikulum adaptif sesuai kebutuhan industri teknologi terkini.</li>
-        <li>Pelatihan berbasis online dan offline dengan metode hybrid learning.</li>
-        <li>Sertifikat kompetensi dan portofolio proyek profesional untuk peserta.</li>
+        <li>Ratusan kelas online mencakup berbagai bidang seperti teknologi, bisnis, pengembangan diri, dan persiapan karier.</li>
+        <li>Materi video interaktif yang dirancang untuk mempermudah proses belajar kapan saja dan di mana saja.</li>
+        <li>Kelas bersertifikat yang dapat diakses seumur hidup.</li>
+        <li>Instruktur profesional yang ahli dan berpengalaman di bidangnya.</li>
+        <li>Bimbingan karier dan wirausaha GRATIS, termasuk konsultasi pengembangan UMKM.</li>
       </ul>
     </div>
   </div>
