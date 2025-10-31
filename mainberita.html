@@ -35,9 +35,6 @@
         color: white;
         position: relative;
         overflow: hidden;
-        height: 1000px;
-        z-index: 0;
-
       }
 
       .hero-berita .badge-kategori {
@@ -86,16 +83,14 @@
 
       .konten-putih {
         background-color: #ffffff;
-        margin-top: -500px;
+        margin-top: 30px;
         border-top-left-radius: 60px;
         border-top-right-radius: 60px;
         position: relative;
-        z-index: 1; 
+        z-index: 0;
         min-height: 100vh;
         padding-top: 60px;
-        overflow: hidden; 
       }
-
 
       /* Search Section */
       .search-section {
@@ -160,12 +155,6 @@
       .nav-link:hover {
         color: #ffb703 !important; /* Kuning saat hover */
       }
-
-      .navbar-nav .nav-link.active {
-      font-weight: 700;
-      color: #ffb703 !important; /* Kuning */
-      border-bottom: 2px solid #ffb703; /* Garis bawah */
-    }
       .btn-login {
         background-color: #ffb703;
         color: black;
@@ -458,9 +447,12 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.html">Tentang Kami</a
+              <a class="nav-link text-warning" href="profile.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning active" href="about.html"
+                >Tentang Kami</a
               >
             </li>
             <li class="nav-item">
@@ -516,522 +508,533 @@
           </div>
         </div>
       </div>
-    </section>
+      <!-- </section> ini yg buat aneh tdi  -->
 
-    <!-- END HEADER -->
+      <!-- END HEADER -->
 
-    <!-- CONTENT -->
-    <section class="konten-putih">
-      <!-- SEARCH SECTION -->
-      <section class="search-section">
-        <div class="container text-center">
-          <div class="search-bar mx-auto mb-5">
-            <input type="text" class="form-control" placeholder="Cari..." />
-            <i class="fa-solid fa-magnifying-glass"></i>
+      <!-- CONTENT -->
+      <section class="konten-putih">
+        <!-- SEARCH SECTION -->
+        <section class="search-section">
+          <div class="container text-center">
+            <div class="search-bar mx-auto mb-5">
+              <input type="text" class="form-control" placeholder="Cari..." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- BERITA TERBARU-->
+        <div class="container">
+          <h3 class="text-left mb-5 fw-bold">
+            <span style="color: #000000">Berita </span>
+            <span style="color: #42357f">Terbaru</span>
+          </h3>
+
+          <div
+            id="beritaCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row g-4 justify-content-center">
+                  <div class="col-md-4">
+                    <div class="card berita-card shadow-sm h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/282/cdb/9d9/dFWG0XpOJcBJY78xePYLXbTSP67A5TW8d1sOZgrP.jpg"
+                        class="card-img-top"
+                        alt=""
+                      />
+                      <div class="card-body">
+                        <span
+                          class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
+                        >
+                          Career Development
+                        </span>
+                        <h5 class="card-title fw-bold">
+                          Wamenaker Dorong BUMN Jadi Penggerak Ekonomi yang
+                          Berkeadilan
+                        </h5>
+                        <p class="card-text text-muted">
+                          Wakil Menteri Ketenagakerjaan, Afriansyah Noor,
+                          mendorong Badan Usaha Milik Negara (BUMN) untuk
+                          memperkuat...
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="text-muted small info-mini1">
+                            <i class="fa-solid fa-building me-1"></i>Siantar
+                            Codes Academy &nbsp;|&nbsp;
+                            <i class="fa-regular fa-calendar me-1"></i> 14
+                            Oktober 2025
+                          </div>
+                        </div>
+                        <a
+                          href="detail-berita.html?id=2"
+                          class="btn btn-outline-warning btn-sm mt-3"
+                        >
+                          Baca Selengkapnya
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card berita-card shadow-sm h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/f99/64c/d5f/0tlVJIfSTJNF3jDyX9zn9mxZb1qdKIcKspgGvw3s.jpeg"
+                        class="card-img-top"
+                        alt=""
+                      />
+                      <div class="card-body">
+                        <span
+                          class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
+                        >
+                          Career Development
+                        </span>
+                        <h5 class="card-title fw-bold">
+                          Kemnaker : Kepatuhan Dunia Usaha Dukung Keberhasilan
+                          Sistem Jaminan Sosial
+                        </h5>
+                        <p class="card-text text-muted">
+                          Sekretaris Jenderal Kementerian Ketenagakerjaan
+                          (Kemnaker) Cris Kuntadi menilai keberhasilan sistem...
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="text-muted small info-mini1">
+                            <i class="fa-solid fa-building me-1"></i>Siantar
+                            Codes Academy &nbsp;|&nbsp;
+                            <i class="fa-regular fa-calendar me-1"></i> 14
+                            Oktober 2025
+                          </div>
+                        </div>
+                        <a
+                          href="detail-berita.html?id=3"
+                          class="btn btn-outline-warning btn-sm mt-3"
+                        >
+                          Baca Selengkapnya
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card berita-card shadow-sm h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/4d5/af2/e32/uOH07yqwX7Kb5dUtqhrUMtIBsI2qpEGodXrMaXai.jpg"
+                        class="card-img-top"
+                        alt=""
+                      />
+                      <div class="card-body">
+                        <span
+                          class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
+                        >
+                          Career Development
+                        </span>
+                        <h5 class="card-title fw-bold">
+                          Menaker Tinjau Pelaksanaan Magang Nasional di Mustika
+                          Ratu
+                        </h5>
+                        <p class="card-text text-muted">
+                          Menteri Ketenagakerjaan Yassierli meninjau pelaksanaan
+                          program magang nasional 2025 bagi lulusan baru...
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="text-muted small info-mini1">
+                            <i class="fa-solid fa-building me-1"></i>Siantar
+                            Codes Academy &nbsp;|&nbsp;
+                            <i class="fa-regular fa-calendar me-1"></i> 14
+                            Oktober 2025
+                          </div>
+                        </div>
+                        <a
+                          href="detail-berita.html?id=4"
+                          class="btn btn-outline-warning btn-sm mt-3"
+                        >
+                          Baca Selengkapnya
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row g-4 justify-content-center">
+                  <div class="col-md-4">
+                    <div class="card berita-card shadow-sm h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/61f/8aa/2eb/CITUibrMPPI4MmiLoZDqAnBbdpddDQy9ahYZpObh.jpg"
+                        class="card-img-top"
+                        alt="Menaker Kemukakan Inisiatif Strategis Kemnaker"
+                      />
+                      <div class="card-body">
+                        <span
+                          class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
+                        >
+                          Career Development
+                        </span>
+                        <h5 class="card-title fw-bold">
+                          Menaker Kemukakan Inisiatif Strategis Kemnaker dalam
+                          Meningkatkan Sistem K3 Nasional
+                        </h5>
+                        <p class="card-text text-muted">
+                          Menteri Ketenagakerjaan, Yassierli, menegaskan
+                          komitmen Kementerian...
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="text-muted small info-mini1">
+                            <i class="fa-solid fa-building me-1"></i>Siantar
+                            Codes Academy &nbsp;|&nbsp;
+                            <i class="fa-regular fa-calendar me-1"></i> 14
+                            Oktober 2025
+                          </div>
+                        </div>
+                        <a
+                          href="detail-berita.html?id=5"
+                          class="btn btn-outline-warning btn-sm mt-3"
+                          >Baca Selengkapnya →</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Berita ID 6 -->
+                  <div class="col-md-4">
+                    <div class="card berita-card shadow-sm h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/de2/928/266/2WvVq7ShibgL4Eh7pksBGBayQaZSRzSYlbWpLlW9.jpg"
+                        class="card-img-top"
+                        alt="Setahun Menaker Yassierli"
+                      />
+                      <div class="card-body">
+                        <span
+                          class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
+                        >
+                          Career Development
+                        </span>
+                        <h5 class="card-title fw-bold">
+                          Setahun Menaker Yassierli, Kemnaker Hadirkan Lompatan
+                          Nyata
+                        </h5>
+                        <p class="card-text text-muted">
+                          Menteri Ketenagakerjaan, Yassierli, memaparkan capaian
+                          dan arah kebijakan Kementerian Ketenagakerjaan...
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="text-muted small info-mini1">
+                            <i class="fa-solid fa-building me-1"></i>Siantar
+                            Codes Academy &nbsp;|&nbsp;
+                            <i class="fa-regular fa-calendar me-1"></i> 14
+                            Oktober 2025
+                          </div>
+                        </div>
+                        <a
+                          href="detail-berita.html?id=6"
+                          class="btn btn-outline-warning btn-sm mt-3"
+                          >Baca Selengkapnya →</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Berita ID 7 -->
+                  <div class="col-md-4">
+                    <div class="card berita-card shadow-sm h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/13a/92e/2ec/1kF4DqXTtE1zfOcsSUTni8ZuI2Lx49VJS6veKB8Z.jpg"
+                        class="card-img-top"
+                        alt="Program Pemagangan Nasional"
+                      />
+                      <div class="card-body">
+                        <span
+                          class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
+                        >
+                          Career Development
+                        </span>
+                        <h5 class="card-title fw-bold">
+                          1.500-an Peserta Lolos Program Pemagangan Nasional
+                          Batch I Gelombang 2
+                        </h5>
+                        <p class="card-text text-muted">
+                          Kementerian Ketenagakerjaan (Kemnaker) menetapkan
+                          sekitar 1.500-an peserta yang lolos Program
+                          Pemagangan...
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="text-muted small info-mini1">
+                            <i class="fa-solid fa-building me-1"></i>Siantar
+                            Codes Academy &nbsp;|&nbsp;
+                            <i class="fa-regular fa-calendar me-1"></i> 14
+                            Oktober 2025
+                          </div>
+                        </div>
+                        <a
+                          href="detail-berita.html?id=7"
+                          class="btn btn-outline-warning btn-sm mt-3"
+                          >Baca Selengkapnya →</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#beritaCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#beritaCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+        </div>
+        <!-- END BERITA TERBARU -->
+
+        <div class="container py-5">
+          <h4 class="fw-bold mb-4" style="color: #42357f">Kategori</h4>
+
+          <div class="kategori-wrapper">
+            <!-- Kategori Filter -->
+            <div class="kategori-filter">
+              <a href="#">Web Development</a>
+              <a href="#">UI/UX Design</a>
+              <a href="#">Digital Marketing</a>
+              <a href="#" class="active">Career Development</a>
+              <a href="#">Bootcamp</a>
+              <a href="#">Artificial Intelligent</a>
+              <a href="#">Front End</a>
+              <a href="#">Back End</a>
+              <a href="#">Data Science</a>
+              <a href="#">Mentor Digital</a>
+            </div>
+
+            <!-- Konten Berita -->
+            <div class="flex-grow-1">
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-6">
+                  <a
+                    href="detail-berita.html?id=8"
+                    class="text-decoration-none text-reset"
+                  >
+                    <div class="card card-news h-100">
+                      <img
+                        src="https://akcdn.detik.net.id/community/media/visual/2025/10/14/sekretaris-jenderal-kementerian-ketenagakerjaan-kemnaker-cris-kuntadi-1760443282120.jpeg?w=700&q=90"
+                        alt="Program Pemagangan Nasional"
+                      />
+                      <div class="card-body">
+                        <span class="badge mb-3">Career Development</span>
+                        <h6 class="fw-bold">
+                          Pemerintah Resmi Memulai Program Pemagangan Nasional
+                          bagi Lulusan Perguruan Tinggi
+                        </h6>
+                        <div class="info-mini mt-2">
+                          <i class="fa-solid fa-building me-1"></i> Siantar
+                          Codes Academy |
+                          <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
+                          Oktober 2025
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                  <a
+                    href="detail-berita.html?id=9"
+                    class="text-decoration-none text-reset"
+                  >
+                    <div class="card card-news h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/4d5/af2/e32/uOH07yqwX7Kb5dUtqhrUMtIBsI2qpEGodXrMaXai.jpg"
+                        alt="Menaker Tinjau Magang Nasional"
+                      />
+                      <div class="card-body">
+                        <span class="badge mb-3">Career Development</span>
+                        <h6 class="fw-bold">
+                          Menaker Tinjau Pelaksanaan Magang Nasional di Mustika
+                          Ratu
+                        </h6>
+                        <div class="info-mini mt-2">
+                          <i class="fa-solid fa-building me-1"></i> Siantar
+                          Codes Academy |
+                          <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
+                          Oktober 2025
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                  <a
+                    href="detail-berita.html?id=10"
+                    class="text-decoration-none text-reset"
+                  >
+                    <div class="card card-news h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/818/a4f/7ba/wOhpyKe1GHioec4v0yncLO4tvm65Ko1SDuyWj9Xi.jpg"
+                        alt="Pendaftaran Magang Nasional Ditutup"
+                      />
+                      <div class="card-body">
+                        <span class="badge mb-3">Career Development</span>
+                        <h6 class="fw-bold">
+                          Pendaftaran Program Magang Nasional Batch I Ditutup,
+                          Kemnaker Apresiasi Antusiasme Pendaftar dan Perusahaan
+                        </h6>
+                        <div class="info-mini mt-2">
+                          <i class="fa-solid fa-building me-1"></i> Siantar
+                          Codes Academy |
+                          <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
+                          Oktober 2025
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                  <a
+                    href="detail-berita.html?id=11"
+                    class="text-decoration-none text-reset"
+                  >
+                    <div class="card card-news h-100">
+                      <img
+                        src="https://portal.kemnaker.go.id/storage/attachments/921/229/7f8/ViQUw0VWQqTnRQZ2nIwQaviwKViuNRADNmybR83v.jpg"
+                        alt="Kemnaker Dorong Partisipasi Perusahaan"
+                      />
+                      <div class="card-body">
+                        <span class="badge mb-3">Career Development</span>
+                        <h6 class="fw-bold">
+                          Kemnaker Dorong Partisipasi Perusahaan dalam Program
+                          Magang Nasional, Target 100 Ribu Lowongan hingga Akhir
+                          2025
+                        </h6>
+                        <div class="info-mini mt-2">
+                          <i class="fa-solid fa-building me-1"></i> Siantar
+                          Codes Academy |
+                          <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
+                          Oktober 2025
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="pagination-custom mt-4">
+                <a href="#">Lihat Selengkapnya</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- BERITA TERBARU-->
-      <div class="container">
-        <h3 class="text-left mb-5 fw-bold">
-          <span style="color: #000000">Berita </span>
-          <span style="color: #42357f">Terbaru</span>
-        </h3>
+      <!-- END CONTENT -->
 
-        <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                  <div class="card berita-card shadow-sm h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/282/cdb/9d9/dFWG0XpOJcBJY78xePYLXbTSP67A5TW8d1sOZgrP.jpg"
-                      class="card-img-top"
-                      alt=""
-                    />
-                    <div class="card-body">
-                      <span
-                        class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
-                      >
-                        Career Development
-                      </span>
-                      <h5 class="card-title fw-bold">
-                        Wamenaker Dorong BUMN Jadi Penggerak Ekonomi yang
-                        Berkeadilan
-                      </h5>
-                      <p class="card-text text-muted">
-                        Wakil Menteri Ketenagakerjaan, Afriansyah Noor,
-                        mendorong Badan Usaha Milik Negara (BUMN) untuk
-                        memperkuat...
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="text-muted small info-mini1">
-                          <i class="fa-solid fa-building me-1"></i>Siantar Codes
-                          Academy &nbsp;|&nbsp;
-                          <i class="fa-regular fa-calendar me-1"></i> 14 Oktober
-                          2025
-                        </div>
-                      </div>
-                      <a
-                        href="detail-berita.html?id=2"
-                        class="btn btn-outline-warning btn-sm mt-3"
-                      >
-                        Baca Selengkapnya
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card berita-card shadow-sm h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/f99/64c/d5f/0tlVJIfSTJNF3jDyX9zn9mxZb1qdKIcKspgGvw3s.jpeg"
-                      class="card-img-top"
-                      alt=""
-                    />
-                    <div class="card-body">
-                      <span
-                        class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
-                      >
-                        Career Development
-                      </span>
-                      <h5 class="card-title fw-bold">
-                        Kemnaker : Kepatuhan Dunia Usaha Dukung Keberhasilan
-                        Sistem Jaminan Sosial
-                      </h5>
-                      <p class="card-text text-muted">
-                        Sekretaris Jenderal Kementerian Ketenagakerjaan
-                        (Kemnaker) Cris Kuntadi menilai keberhasilan sistem...
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="text-muted small info-mini1">
-                          <i class="fa-solid fa-building me-1"></i>Siantar Codes
-                          Academy &nbsp;|&nbsp;
-                          <i class="fa-regular fa-calendar me-1"></i> 14 Oktober
-                          2025
-                        </div>
-                      </div>
-                      <a
-                        href="detail-berita.html?id=3"
-                        class="btn btn-outline-warning btn-sm mt-3"
-                      >
-                        Baca Selengkapnya
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card berita-card shadow-sm h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/4d5/af2/e32/uOH07yqwX7Kb5dUtqhrUMtIBsI2qpEGodXrMaXai.jpg"
-                      class="card-img-top"
-                      alt=""
-                    />
-                    <div class="card-body">
-                      <span
-                        class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
-                      >
-                        Career Development
-                      </span>
-                      <h5 class="card-title fw-bold">
-                        Menaker Tinjau Pelaksanaan Magang Nasional di Mustika
-                        Ratu
-                      </h5>
-                      <p class="card-text text-muted">
-                        Menteri Ketenagakerjaan Yassierli meninjau pelaksanaan
-                        program magang nasional 2025 bagi lulusan baru...
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="text-muted small info-mini1">
-                          <i class="fa-solid fa-building me-1"></i>Siantar Codes
-                          Academy &nbsp;|&nbsp;
-                          <i class="fa-regular fa-calendar me-1"></i> 14 Oktober
-                          2025
-                        </div>
-                      </div>
-                      <a
-                        href="detail-berita.html?id=4"
-                        class="btn btn-outline-warning btn-sm mt-3"
-                      >
-                        Baca Selengkapnya
-                      </a>
-                    </div>
-                  </div>
-                </div>
+      <!-- START FOOTER  -->
+      <footer class="footer-custom text-white text-center text-lg-start">
+        <div class="container-fluid py-5 px-0">
+          <div class="row gy-4 gx-5 justify-content-center">
+            <!-- Kolom 1 -->
+            <div class="col-lg-5 col-md-6">
+              <div class="align-items-center justify-content-center mx-5 mb-3">
+                <img
+                  alt="Logo"
+                  class="brand-logo"
+                  anima-src="https://cdn.animaapp.com/projects/64342f198ad28913b10efee9/releases/690193f92ff3927bbd80b025/img/whatsapp-image-2025-10-28-at-09-26-25-72fa03be-1-1@2x.png"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                />
               </div>
+              <p class="mt-1 mx-5">
+                Pelatihan Online Berbasis Video & E-Book Dengan Instruktur
+                Profesional
+              </p>
+              <ul class="list-unstyled d-flex flex-row mx-5 mb-0">
+                <li>
+                  <a class="text-white px-2" href="#"
+                    ><i class="fab fa-linkedin fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-white px-2" href="#"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-white px-2" href="#"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-white px-2" href="#"
+                    ><i class="fab fa-youtube fa-lg"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                  <div class="card berita-card shadow-sm h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/61f/8aa/2eb/CITUibrMPPI4MmiLoZDqAnBbdpddDQy9ahYZpObh.jpg"
-                      class="card-img-top"
-                      alt="Menaker Kemukakan Inisiatif Strategis Kemnaker"
-                    />
-                    <div class="card-body">
-                      <span
-                        class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
-                      >
-                        Career Development
-                      </span>
-                      <h5 class="card-title fw-bold">
-                        Menaker Kemukakan Inisiatif Strategis Kemnaker dalam
-                        Meningkatkan Sistem K3 Nasional
-                      </h5>
-                      <p class="card-text text-muted">
-                        Menteri Ketenagakerjaan, Yassierli, menegaskan komitmen
-                        Kementerian...
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="text-muted small info-mini1">
-                          <i class="fa-solid fa-building me-1"></i>Siantar Codes
-                          Academy &nbsp;|&nbsp;
-                          <i class="fa-regular fa-calendar me-1"></i> 14 Oktober
-                          2025
-                        </div>
-                      </div>
-                      <a
-                        href="detail-berita.html?id=5"
-                        class="btn btn-outline-warning btn-sm mt-3"
-                        >Baca Selengkapnya</a
-                      >
-                    </div>
-                  </div>
-                </div>
+            <!-- Kolom 2 -->
+            <div class="col-lg-1 col-md-6"></div>
 
-                <!-- Berita ID 6 -->
-                <div class="col-md-4">
-                  <div class="card berita-card shadow-sm h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/de2/928/266/2WvVq7ShibgL4Eh7pksBGBayQaZSRzSYlbWpLlW9.jpg"
-                      class="card-img-top"
-                      alt="Setahun Menaker Yassierli"
-                    />
-                    <div class="card-body">
-                      <span
-                        class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
-                      >
-                        Career Development
-                      </span>
-                      <h5 class="card-title fw-bold">
-                        Setahun Menaker Yassierli, Kemnaker Hadirkan Lompatan
-                        Nyata
-                      </h5>
-                      <p class="card-text text-muted">
-                        Menteri Ketenagakerjaan, Yassierli, memaparkan capaian
-                        dan arah kebijakan Kementerian Ketenagakerjaan...
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="text-muted small info-mini1">
-                          <i class="fa-solid fa-building me-1"></i>Siantar Codes
-                          Academy &nbsp;|&nbsp;
-                          <i class="fa-regular fa-calendar me-1"></i> 14 Oktober
-                          2025
-                        </div>
-                      </div>
-                      <a
-                        href="detail-berita.html?id=6"
-                        class="btn btn-outline-warning btn-sm mt-3"
-                        >Baca Selengkapnya</a
-                      >
-                    </div>
-                  </div>
-                </div>
+            <!-- Kolom 3 -->
+            <div class="col-lg-2 col-md-6">
+              <h5 class="fw-bold mb-3">Link Terkait</h5>
+              <ul class="list-unstyled footer-links">
+                <li><a href="#">Materi Pembelajaran</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </div>
 
-                <!-- Berita ID 7 -->
-                <div class="col-md-4">
-                  <div class="card berita-card shadow-sm h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/13a/92e/2ec/1kF4DqXTtE1zfOcsSUTni8ZuI2Lx49VJS6veKB8Z.jpg"
-                      class="card-img-top"
-                      alt="Program Pemagangan Nasional"
-                    />
-                    <div class="card-body">
-                      <span
-                        class="badge bg-light text-dark mb-3 px-3 py-2 border rounded-pill"
-                      >
-                        Career Development
-                      </span>
-                      <h5 class="card-title fw-bold">
-                        1.500-an Peserta Lolos Program Pemagangan Nasional Batch
-                        I Gelombang 2
-                      </h5>
-                      <p class="card-text text-muted">
-                        Kementerian Ketenagakerjaan (Kemnaker) menetapkan
-                        sekitar 1.500-an peserta yang lolos Program
-                        Pemagangan...
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="text-muted small info-mini1">
-                          <i class="fa-solid fa-building me-1"></i>Siantar Codes
-                          Academy &nbsp;|&nbsp;
-                          <i class="fa-regular fa-calendar me-1"></i> 14 Oktober
-                          2025
-                        </div>
-                      </div>
-                      <a
-                        href="detail-berita.html?id=7"
-                        class="btn btn-outline-warning btn-sm mt-3"
-                        >Baca Selengkapnya</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- Kolom 4 -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="fw-bold mb-3">Kontak Kami</h5>
+              <ul class="list-unstyled mb-0">
+                <li><p class="mb-1">admin@siantarcodesacademy.com</p></li>
+                <li><p class="mb-1">+62890791717787</p></li>
+              </ul>
             </div>
           </div>
 
-          <!-- Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#beritaCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#beritaCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div>
-      </div>
-      <!-- END BERITA TERBARU -->
-
-      <div class="container py-5">
-        <h4 class="fw-bold mb-4" style="color: #42357f">Kategori</h4>
-
-        <div class="kategori-wrapper">
-          <!-- Kategori Filter -->
-          <div class="kategori-filter">
-            <a href="#">Web Development</a>
-            <a href="#">UI/UX Design</a>
-            <a href="#">Digital Marketing</a>
-            <a href="#" class="active">Career Development</a>
-            <a href="#">Bootcamp</a>
-            <a href="#">Artificial Intelligent</a>
-            <a href="#">Front End</a>
-            <a href="#">Back End</a>
-            <a href="#">Data Science</a>
-            <a href="#">Mentor Digital</a>
-          </div>
-
-          <!-- Konten Berita -->
-          <div class="flex-grow-1">
-            <div class="row g-4">
-              <div class="col-md-6 col-lg-6">
-                <a
-                  href="detail-berita.html?id=8"
-                  class="text-decoration-none text-reset"
-                >
-                  <div class="card card-news h-100">
-                    <img
-                      src="https://akcdn.detik.net.id/community/media/visual/2025/10/14/sekretaris-jenderal-kementerian-ketenagakerjaan-kemnaker-cris-kuntadi-1760443282120.jpeg?w=700&q=90"
-                      alt="Program Pemagangan Nasional"
-                    />
-                    <div class="card-body">
-                      <span class="badge mb-3">Career Development</span>
-                      <h6 class="fw-bold">
-                        Pemerintah Resmi Memulai Program Pemagangan Nasional
-                        bagi Lulusan Perguruan Tinggi
-                      </h6>
-                      <div class="info-mini mt-2">
-                        <i class="fa-solid fa-building me-1"></i> Siantar Codes
-                        Academy |
-                        <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
-                        Oktober 2025
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-6 col-lg-6">
-                <a
-                  href="detail-berita.html?id=9"
-                  class="text-decoration-none text-reset"
-                >
-                  <div class="card card-news h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/4d5/af2/e32/uOH07yqwX7Kb5dUtqhrUMtIBsI2qpEGodXrMaXai.jpg"
-                      alt="Menaker Tinjau Magang Nasional"
-                    />
-                    <div class="card-body">
-                      <span class="badge mb-3">Career Development</span>
-                      <h6 class="fw-bold">
-                        Menaker Tinjau Pelaksanaan Magang Nasional di Mustika
-                        Ratu
-                      </h6>
-                      <div class="info-mini mt-2">
-                        <i class="fa-solid fa-building me-1"></i> Siantar Codes
-                        Academy |
-                        <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
-                        Oktober 2025
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-6 col-lg-6">
-                <a
-                  href="detail-berita.html?id=10"
-                  class="text-decoration-none text-reset"
-                >
-                  <div class="card card-news h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/818/a4f/7ba/wOhpyKe1GHioec4v0yncLO4tvm65Ko1SDuyWj9Xi.jpg"
-                      alt="Pendaftaran Magang Nasional Ditutup"
-                    />
-                    <div class="card-body">
-                      <span class="badge mb-3">Career Development</span>
-                      <h6 class="fw-bold">
-                        Pendaftaran Program Magang Nasional Batch I Ditutup,
-                        Kemnaker Apresiasi Antusiasme Pendaftar dan Perusahaan
-                      </h6>
-                      <div class="info-mini mt-2">
-                        <i class="fa-solid fa-building me-1"></i> Siantar Codes
-                        Academy |
-                        <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
-                        Oktober 2025
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-6 col-lg-6">
-                <a
-                  href="detail-berita.html?id=11"
-                  class="text-decoration-none text-reset"
-                >
-                  <div class="card card-news h-100">
-                    <img
-                      src="https://portal.kemnaker.go.id/storage/attachments/921/229/7f8/ViQUw0VWQqTnRQZ2nIwQaviwKViuNRADNmybR83v.jpg"
-                      alt="Kemnaker Dorong Partisipasi Perusahaan"
-                    />
-                    <div class="card-body">
-                      <span class="badge mb-3">Career Development</span>
-                      <h6 class="fw-bold">
-                        Kemnaker Dorong Partisipasi Perusahaan dalam Program
-                        Magang Nasional, Target 100 Ribu Lowongan hingga Akhir
-                        2025
-                      </h6>
-                      <div class="info-mini mt-2">
-                        <i class="fa-solid fa-building me-1"></i> Siantar Codes
-                        Academy |
-                        <i class="fa-regular fa-calendar ms-2 me-1"></i> 14
-                        Oktober 2025
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pagination -->
-            <div class="pagination-custom mt-4">
-              <a href="#">Lihat Selengkapnya</a>
-            </div>
+          <div class="text-center py-3 footer-bottom">
+            © 2025 Siantar Codes Academy
           </div>
         </div>
-      </div>
+      </footer>
     </section>
-
-    <!-- END CONTENT -->
-
-    <!-- START FOOTER  -->
-    <footer class="footer-custom text-white text-center text-lg-start">
-      <div class="container-fluid py-5 px-0">
-        <div class="row gy-4 gx-5 justify-content-center">
-          <!-- Kolom 1 -->
-          <div class="col-lg-5 col-md-6">
-            <div class="align-items-center justify-content-center mx-5 mb-3">
-              <img
-                alt="Logo"
-                class="brand-logo"
-                anima-src="https://cdn.animaapp.com/projects/64342f198ad28913b10efee9/releases/690193f92ff3927bbd80b025/img/whatsapp-image-2025-10-28-at-09-26-25-72fa03be-1-1@2x.png"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              />
-            </div>
-            <p class="mt-1 mx-5">
-              Pelatihan Online Berbasis Video & E-Book Dengan Instruktur
-              Profesional
-            </p>
-            <ul class="list-unstyled d-flex flex-row mx-5 mb-0">
-              <li>
-                <a class="text-white px-2" href="#"
-                  ><i class="fab fa-linkedin fa-lg"></i
-                ></a>
-              </li>
-              <li>
-                <a class="text-white px-2" href="#"
-                  ><i class="fab fa-facebook fa-lg"></i
-                ></a>
-              </li>
-              <li>
-                <a class="text-white px-2" href="#"
-                  ><i class="fab fa-instagram fa-lg"></i
-                ></a>
-              </li>
-              <li>
-                <a class="text-white px-2" href="#"
-                  ><i class="fab fa-youtube fa-lg"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Kolom 2 -->
-          <div class="col-lg-1 col-md-6"></div>
-
-          <!-- Kolom 3 -->
-          <div class="col-lg-2 col-md-6">
-            <h5 class="fw-bold mb-3">Link Terkait</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Materi Pembelajaran</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Register</a></li>
-            </ul>
-          </div>
-
-          <!-- Kolom 4 -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="fw-bold mb-3">Kontak Kami</h5>
-            <ul class="list-unstyled mb-0">
-              <li><p class="mb-1">admin@siantarcodesacademy.com</p></li>
-              <li><p class="mb-1">+62890791717787</p></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="text-center py-3 footer-bottom">
-          © 2025 Siantar Codes Academy
-        </div>
-      </div>
-    </footer>
     <!-- END FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
